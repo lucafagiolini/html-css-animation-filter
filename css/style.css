@@ -166,8 +166,130 @@
 }
 
 /* 10 */
-@keyframes spin {}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
 
-.ex-10-icon:hover {
-    transform: rotate();
+    100% {
+        transform: rotate(360deg)
+    }
+
+}
+
+.ex-10-icon {
+    animation: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* 11 */
+@keyframes spin-alternative {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+
+}
+
+.ex-11-icon:hover {
+    animation: spin-alternative;
+    color: red;
+    animation-iteration-count: infinite;
+
+
+}
+
+/* 12 */
+
+.@keyframes whitespace-top-move {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: 60%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button .ex-12-top-white {
+    animation-name: whitespace-top-move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes whitespace-bottom-move {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: 60%;
+    }
+
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-12-button .ex-12-bottom-white {
+    animation-name: whitespace-bottom-move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* 13 */
+
+@keyframes whitespace-13-top-move {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    20% {
+        top: -10px;
+
+        left: 90%;
+    }
+
+    35% {
+        left: 90%;
+        top: 90%;
+    }
+
+    70% {
+        left: -10%;
+        top: 90%;
+    }
+
+    85% {
+        left: -10%;
+        top: -10px;
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+.ex-13-button .ex-13-top-white {
+    animation-name: whitespace-13-top-move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+
 }
